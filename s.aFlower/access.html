@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>s.a Flower</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Shizuru&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+
+
+</head>
+
+<body>
+<header> <a href="index.html"><img src="img/logo.png" width="450" height="100" alt="" class="logo"/></a>
+    <div id="navArea">
+    <nav>
+        <div class="inner">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="access.html">Access</a></li>
+    </ul>
+        </div>
+    </nav> 
+    <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> 
+
+  <div id="mask"></div>
+    </div>
+    </header>
+<main>
+        <figure class="subimage"><img src="img/subimage3.png" alt="" class="subimage"/></figure>
+<section class="access">
+        <h2 class="subh2">Access</h2>
+        <img src="img/shop7.jpg" alt="" width="520" height="350" class="futako"/>
+<div class="box-area">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.794925793318!2d139.62559517774022!3d35.61318260139779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f415ba7b7c19%3A0xfc778a3a914e8f99!2z546J5bed6auY5bO25bGL77yz772l77yj!5e0!3m2!1sja!2sjp!4v1727750122245!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="access_text">
+                <span>本店</span>
+            　　<p>〒150-0094<br>
+                    東京都世田谷区玉川３丁目１７−１<br>
+                玉川高島屋  1階<br><br>
+                    Tel :　03-3756-2554</p>
+                
+                </div>
+</div>
+</section>
+</main>
+    <div id="page_top"><a href="#"></a></div>
+<footer>
+        <div class="footer_box"> <a href="index.html"><img src="img/logo.png" width="300" height="67" alt=""/></a>
+                <div class="footertext">
+                        <p><a href="#">プライバシーポリシー</a></p>
+                        <p><a href="#">特定商取引法に基づく表記</a></p>
+                </div>
+        </div>
+        <p class="copylight">copylight@職業訓練</p>
+    
+</footer>
+    
+    
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script>
+    (function($) {
+  var $nav   = $('#navArea');
+  var $btn   = $('.toggle_btn');
+  var $mask  = $('#mask');
+  var open   = 'open'; // class
+  // menu open close
+  $btn.on( 'click', function() {
+    if ( ! $nav.hasClass( open ) ) {
+      $nav.addClass( open );
+    } else {
+      $nav.removeClass( open );
+    }
+  });
+  // mask close
+  $mask.on('click', function() {
+    $nav.removeClass( open );
+  });
+        
+  //メイン画像のカルーセル
+            $('.mainimage').slick({
+                speed: 5000, // スライドさせるスピード（ミリ秒）
+                autoplay: true, //自動再生させる
+                arrows: false,//左右の矢印を消す
+            });        
+//inview
+        $(".inview").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+} )(jQuery);
+  
+    </script>
+    
+    
+    
+</body>
+</html>
