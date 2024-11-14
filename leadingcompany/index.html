@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leading Company株式会社</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+    <div class="nav-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+  <h1><a href="index.html"><img src="img/logo.png" width="135" height="85" alt="" class="logo"/></a></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html#business">事業内容</a></li>
+      <li><a href="about.html">社員紹介</a></li>
+      <li><a href="company.html">会社概要</a></li>
+      <li><a href="index.html#access">アクセス</a></li>
+      <li><a href="staff.html">求人募集</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <p class="mainimage"><img src="img/mainimage.jpg" width="1200" height="600" alt=""/></p>
+  <section class="info">
+    <h2 data-english="新着情報">New infomation</h2>
+    <div class="text">
+      <p>2021.01.01　2021年度新卒者募集開始<br>
+        2020.01.01　2020年度新卒者募集開始<br>
+        2019.01.01　2019年度新卒者募集開始<br>
+        2018.01.01　2018年度新卒者募集開始<br>
+      2017.01.01　2017年度新卒者募集開始</p>
+    </div>
+  </section>
+  <section class="business" id="business">
+    <h2 data-english="事業内容">business description</h2>
+    <div class="box-area">
+      <figure class="box"><img src="img/bd1.jpg" width="443" height="264" alt=""/></figure>
+      <div class="box"> 
+        <span><h3>・ソフトウェア開発</h3></span>
+        <p>IoTアプリケーションの開発<br>
+          IoTプラットフォームを使った開発コストを削減し<br>
+          より安価にソフトウェアを提供いたします。<br>
+        </p>
+      </div>
+      <figure class="box"><img src="img/bd2.jpg" width="443" height="296" alt=""/></figure>
+      <div class="box">
+          <span><h3>・WEBシステム開発</h3></span>
+          <p>AWSの環境構築、ビジネス要件および<br>
+          AWS要件の策定から利用するAWSサービスの<br>
+        最適化運用後の支援など行います</p>
+      </div>
+      <figure class="box"><img src="img/bd3.jpg" width="443" height="295" alt=""/></figure>
+      <div class="box">
+        <span><h3>・WEBデザイン・HTML制作</h3></span>
+          <p>クライアントのニーズにあったサイト作成、<br>
+          集客アップのためのリニューアル<br>
+          SEO対策やリスティング広告、<br>
+        YoutubeAdsにも対応いたします。</p>
+      </div>
+    </div>
+  </section>
+  <section class="access" id="access">
+    <h2 data-english="アクセス">Access</h2>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7929788185256!2d139.68289967602772!3d35.706711728573545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2c984c5e54f%3A0xc96bd8d3c085704d!2z44CSMTY0LTAwMDMg5p2x5Lqs6YO95Lit6YeO5Yy65p2x5Lit6YeO77yU5LiB55uu77yS4oiS77yT!5e0!3m2!1sja!2sjp!4v1720161981302!5m2!1sja!2sjp" width="700" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <p class="text">所在地<br>
+      〒164-8787　東京都中野区東中野4-2-3<br>
+      JR中央・総武線「東中野駅」東口（北側）下車 徒歩1分<br>
+    都営地下鉄　大江戸線「東中野駅」A1出口下車 徒歩1分</p>
+  </section>
+  <p class="contact"><a href="mailto:leadingcompany@abc.net"><img src="img/contact.png" width="177" height="34" alt=""/></a></p>
+</main>
+<p class="pagetop"><a href="#top"><img src="img/pagetop.png" width="75" height="173" alt=""/></a></p>
+<footer>
+  <p><a href="index.html"><img src="img/logo.png" width="200" height="125" alt=""/></a></p>
+  <div class="footerlink">
+  <p>TEL:03-XXXX-XXXX<br>
+    <a href="#">プライバシーポリシー</a><br>
+    <a href="#">利用規約</a><br>
+    <a href="#">免責事項</a><br>
+    <a href="#">サイトマップ</a></p>
+  </div>
+</footer>
+    <p class="copyright">Copyright © 職業訓練課題 </p>
+    
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+        //.nav-buttonをクリックしたときの設定
+        $(".nav-button").on("click",function(){
+            //<body>にクラス名[menu-open]を追加・削除
+            $("body").toggleClass("menu-open");
+        });
+        //ナビゲーション内のリンクをクリックした時の設定
+        $(document).on("click",".menu-open nav a",function(){
+            //ブラウザに.nav-buttonをクリックさせる
+            $(".nav-button").trigger("click");
+        });    
+            
+        });
+      </script>
+
+</body>
+</html>
