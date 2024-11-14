@@ -1,0 +1,137 @@
+@charset "utf-8";
+body {
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+  font-style: normal;
+  font-size: 62.5%;
+  color: #292929;
+}
+
+.trial {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 6rem;
+  width: 100%;
+  max-width: 64%;
+  height: auto;
+}
+#access {
+  background-image: url(img/marble.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+.recruit img{
+  margin-bottom: 2.5rem;
+  max-width: 60%;
+  height: auto;
+  /* [disabled]width: 660px; */
+}
+
+body footer {
+  margin-top: -3rem;
+}
+.aceess-textbox {
+  padding: 1.5rem 4rem;
+  background-color: rgba(255,255,255,0.5);
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  height: auto;
+  text-align: left;
+}
+.text {
+  margin-bottom: 3rem;
+}
+.mail {
+  background-position: 10rem;
+}
+.reception     {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(255,255,255,0.7);
+  max-width: 240px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+.trial .square img {
+	width:60%;
+	position: absolute;
+	top:65%;
+	left:45%;
+  transform: translate(-50%, -55%);
+	z-index: -1;
+}
+h2 {
+  padding-top: 2.8rem;
+}
+.contact-area {
+  text-align: left;
+  display: inline-block;
+
+}
+
+
+@media (max-width:900px){
+body {
+  font-size: 119%;
+}
+h2 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+  margin-top: -1rem;
+}
+#contact {
+  margin-bottom: 2rem;
+}
+.trial {
+  margin-bottom: 4rem;
+}
+.text {
+  margin-bottom: 2rem;
+}
+.contact-area {
+  margin: 0 2rem;
+}
+.aceess-textbox {
+    padding: 1.5rem 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+
+}
+
+
+
+
+
+}
+
+@media (max-width:600px){
+body {
+  font-size: 100%;
+}
+h2 {
+  font-size: 1.18rem;
+  padding-top: 0.9rem;
+  margin-bottom: 1.3rem;
+}
+.contact-area {
+  margin-top: -0.6rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+.aceess-textbox {
+  padding: 0.6rem 0.4rem;
+}
+
+
+
+}
