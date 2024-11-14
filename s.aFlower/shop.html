@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>s.a Flower</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Shizuru&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+
+
+</head>
+
+<body>
+<header> <a href="index.html"><img src="img/logo.png" width="450" height="100" alt="" class="logo"/></a>
+    <div id="navArea">
+    <nav>
+        <div class="inner">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="access.html">Access</a></li>
+    </ul>
+        </div>
+    </nav> 
+    <div class="toggle_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> 
+
+  <div id="mask"></div>
+    </div>
+    </header>
+<main>
+        <figure class="subimage"><img src="img/subimage2.png" alt=""/></figure>
+<section class="shop">
+        <h2 class="subh2">Shop List</h2>
+      <h3><span>東京都</span></h3>
+        <div class="shoplist inview">
+            <img src="img/shop1.jpg" alt="" width="400" height="269" class="shopimage"/>
+                <div class="shop_text">
+                    <span>表参道店</span>
+                        <p>〒107-0062<br>
+                                東京都港区南青山３丁目31−24<br><br>        
+                                Tel :　03-2246-6589</p>
+                </div>
+        </div>
+         <div class="shoplist inview">
+             <img src="img/shop2.jpg" alt="" width="400" height="269" class="shopimage"/>
+               <div class="shop_text">  
+               <span>代官山店</span>
+                <p>〒150-0034<br>
+                    東京都渋谷区代官山町34−5<br><br>
+                    Tel :　03-2545-1114</p>
+        </div>
+             </div>
+         <div class="shoplist inview">
+             <img src="img/shop3.jpg" alt="" width="400" height="269" class="shopimage"/>
+                <div class="shop_text">
+                <span>自由が丘店</span>
+                <p>〒152-0035<br>
+                        東京都目黒区自由が丘２丁目10-5<br><br>        
+                        Tel :　03-2246-6589</p>
+        </div>
+             </div>
+    　<h3><span>埼玉県</span></h3>
+        <div class="shoplist inview">
+            <img src="img/shop4.jpg" alt="" width="400" height="269" class="shopimage"/>
+              <div class="shop_text">
+                <span>武蔵浦和店</span>
+                <p>〒336-0021<br>
+                        埼玉県さいたま市南区別所7丁目10-12<br><br>        
+                        Tel :　048-445-6733</p>
+        </div>
+            </div>
+        <h3><span>神奈川県</span></h3>
+        <div class="shoplist inview">
+            <img src="img/shop5.jpg" alt="" width="400" height="269" class="shopimage"/>
+              <div class="shop_text">
+               <span>みなとみらい店</span>
+                <p>〒220-0012<br> 
+                        神奈川県横浜市西区みなとみらい２丁目３−８<br><br>        
+                        Tel :　045-423-6589</p>
+        </div>
+            </div>
+         <div class="shoplist inview">
+             <img src="img/shop6.jpg" alt="" width="400" height="269" class="shopimage"/>
+               <div class="shop_text">
+                <span>武蔵小杉店</span>
+                <p>〒211-0063<br>
+                    神奈川県川崎市中原区小杉町３丁目54２<br><br>
+                    Tel :　044-458-7749</p>
+        </div>
+             </div>
+    
+    </section>
+</main>
+    <div id="page_top"><a href="#"></a></div>
+<footer>
+        <div class="footer_box"> <a href="index.html"><img src="img/logo.png" width="300" height="67" alt=""/></a>
+                <div class="footertext">
+                        <p><a href="#">プライバシーポリシー</a></p>
+                        <p><a href="#">特定商取引法に基づく表記</a></p>
+                </div>
+        </div>
+        <p class="copylight">copylight@職業訓練</p>
+    
+</footer>
+    
+    
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script>
+    (function($) {
+  var $nav   = $('#navArea');
+  var $btn   = $('.toggle_btn');
+  var $mask  = $('#mask');
+  var open   = 'open'; // class
+  // menu open close
+  $btn.on( 'click', function() {
+    if ( ! $nav.hasClass( open ) ) {
+      $nav.addClass( open );
+    } else {
+      $nav.removeClass( open );
+    }
+  });
+  // mask close
+  $mask.on('click', function() {
+    $nav.removeClass( open );
+  });
+        
+  //メイン画像のカルーセル
+            $('.mainimage').slick({
+                speed: 5000, // スライドさせるスピード（ミリ秒）
+                autoplay: true, //自動再生させる
+                arrows: false,//左右の矢印を消す
+            });        
+//inview
+        $(".inview").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+} )(jQuery);
+  
+    </script>
+    
+    
+    
+</body>
+</html>
